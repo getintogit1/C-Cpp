@@ -50,6 +50,7 @@ ermittle_schritte_pro_name(SchrittListe *liste, char **namen, int namen_count) {
     dict.data[i].schrittListe.count = 0;
   }
 
+  //TODO : AUSLAGERN IN SORT()!! 
   // Schritte sortieren nach schritt_nr (Bubble sort für Einfachheit)
   for (int a = 0; a < liste->count; a++) {
     for (int b = a + 1; b < liste->count; b++) {
@@ -113,6 +114,7 @@ void ermittle_anzahl_pro_komponente_pro_namen(EndProdukt *produkte, int count) {
         p->komponenten.count++;
       }
     }
+    free(p);
   }
 }
 
