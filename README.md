@@ -65,16 +65,18 @@ Robot R2D2 1 Motor XJ9 2 montieren 120
 
 ### Python
 ```bash
+//python
 python3 main.py teil.dat schritt.dat
 
-C
+//C
 makefile
 ./program teil.dat schritt.dat
 
-C++
+//C++
 makefile
 ./program teil.dat schritt.dat
 
+```bash
 🧠 Implementierungsdetails
 Einlesen der Dateien zeilenweise
 
