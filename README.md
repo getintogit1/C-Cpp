@@ -7,20 +7,6 @@ Die Programme lesen strukturierte Textdateien ein, verarbeiten die enthaltenen D
 
 ---
 
-## 📁 Projektstruktur
-
-.
-├── python/
-│ └── main.py
-├── c/
-│ └── main.c
-├── cpp/
-│ └── main.cpp
-└── README.md
-
-yaml
-Code kopieren
-
 Jeder Ordner enthält eine eigenständige Implementierung derselben Logik in der jeweiligen Programmiersprache.
 
 ---
@@ -39,14 +25,10 @@ Jede Zeile beschreibt **ein Teil**, eindeutig identifiziert durch **Typ** und **
 **Format:**
 Typ Bezeichnung Einheit Gewicht Preis
 
-makefile
-Code kopieren
+
 
 **Beispiel:**
 Motor XJ9 kg 12.5 199.99
-
-yaml
-Code kopieren
 
 ---
 
@@ -57,9 +39,6 @@ Beschreibt die Arbeitsschritte zum Zusammenbauen von Teilen.
 **Format:**
 Ziel-Typ Ziel-Bez Nr Quell-Typ Quell-Bez Menge Taetigkeit Zeit
 
-markdown
-Code kopieren
-
 **Bedeutung:**
 - Beim Zusammenbau des Ziel-Teils
 - wird im `Nr`-ten Schritt
@@ -69,9 +48,6 @@ Code kopieren
 
 **Beispiel:**
 Robot R2D2 1 Motor XJ9 2 montieren 120
-
-yaml
-Code kopieren
 
 ---
 
@@ -90,17 +66,14 @@ Code kopieren
 ### Python
 ```bash
 python3 main.py teil.dat schritt.dat
+
 C
-bash
-Code kopieren
-gcc main.c -o fabrikanalyse
-./fabrikanalyse teil.dat schritt.dat
+makefile
+./program teil.dat schritt.dat
+
 C++
-bash
-Code kopieren
-g++ main.cpp -o fabrikanalyse
-./fabrikanalyse teil.dat schritt.dat
-Optionale Ausgabedateien können (je nach Implementierung) ebenfalls über die Kommandozeile übergeben werden.
+makefile
+./program teil.dat schritt.dat
 
 🧠 Implementierungsdetails
 Einlesen der Dateien zeilenweise
