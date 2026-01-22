@@ -64,14 +64,14 @@ Robot R2D2 1 Motor XJ9 2 montieren 120
 ## ▶️ Ausführung
 ```bash
 
-//Python
+#Python
 python3 main.py teil.dat schritt.dat
 
-//C
+#C
 make
 ./program teil.dat schritt.dat
 
-//C++
+#C++
 make
 ./program teil.dat schritt.dat
 ```
